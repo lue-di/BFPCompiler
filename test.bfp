@@ -1,0 +1,26 @@
+print("Account:");
+var b=10;
+var tmp;
+var hash=0;
+while(b){
+    b=10;
+    tmp=cin();
+    b=b-tmp;
+    hash = (hash*31)+tmp;
+}
+print("Password:");
+b=10;
+var tf=0;
+while(b){
+    b=10;
+    tmp=cin();
+    b=b-tmp;
+    if(tmp-10){
+        tf=tf*10+tmp-48;
+    }
+}
+if (hash-tf){
+    print("Error");
+}else{
+    print("Success");
+}
